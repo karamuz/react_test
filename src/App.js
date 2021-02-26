@@ -1,5 +1,5 @@
-import './App.css';
 import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
   const title = 'welcome';
@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <div className="content">
         <h1>{title}</h1>
-        <p>{"hello ninjas"} </p>
+        <Home />
   <a href={link} > Google dot com </a>
       </div>
 
