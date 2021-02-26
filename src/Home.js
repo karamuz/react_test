@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BlogList from './BlogList';
 
 
@@ -15,9 +15,12 @@ const Home = () => {
     const handleDelete = (id) => {
         const newBlogs = blogs.filter(iterative => iterative.id !== id);
         setBlogs(newBlogs);
-
-    
      }
+
+     useEffect(() => {
+         console.log('effective test')
+
+     });
     const handleClick = (e) => {
         console.log(e.target)
         alert("ohh yeah, gimme more");
